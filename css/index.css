@@ -1,0 +1,14 @@
+/* Anchor tag */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* HTML menu object css style */
+.page_header_obj{
+    padding: 2px 6px;
+    background-color: yellow;
+    border-style: solid;
+    border-color: Black
+}
+
