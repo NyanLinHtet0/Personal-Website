@@ -4,7 +4,7 @@ a {
     text-decoration: none;
 }
 
-.menu_button{
+.menu_button_container{
     display: inline-block;
     line-height: 2.5rem;    
     font-size: 3rem;
@@ -16,7 +16,7 @@ a {
     padding: 0rem .5rem;
     border-radius: 10px 10px 10px 10px;
 }
-.menu_button:hover{
+.menu_button_container:hover{
     transform: scale(1.1);
     transition: transform 0.15s ease-in-out;
     cursor:pointer;
@@ -48,7 +48,7 @@ a {
     border-right: 0;
     border-radius: 10px 0px 0px 10px;
 }
-.menu_button, .page_header_obj {
+.menu_button_container, .page_header_obj {
     box-shadow: 0 8px 8px rgba(0,0,0,0.1);
     border-style: solid;
     border-color: Black;
@@ -58,4 +58,6 @@ a {
     transform: scale(1.1);
     transition: transform 0.15s ease-in-out;
 }
+
+
 
