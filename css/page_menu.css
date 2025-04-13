@@ -52,6 +52,7 @@ html, body {
     left: -20px;
     box-shadow: 0 8px 8px rgba(0,0,0,0.1);
     margin-left: 2.5rem;
+    background-color:beige;
 }
 .menu_button_inside:hover,.menu_button_outside:hover,.page_header_obj:hover  {
     transform: scale(1.1);
