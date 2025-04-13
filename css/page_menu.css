@@ -1,4 +1,4 @@
-/* Anchor tag */
+/* Page Styling */
 a {
     color: black;
     text-decoration: none;
@@ -8,14 +8,16 @@ html, body {
     padding: 0;
 }
 
+/* Page Content Styling */
 .body_content{
     position: relative;
     display: flex;
-    /* margin-top: 0.5rem; */
     margin: 0.8rem;
     border-style: solid;
     border-color: Black;
 }
+
+/* Menu objects styling */
 .page_menu{
     display: none;
     position: relative;
@@ -32,6 +34,7 @@ html, body {
     border-radius: 0px 0px 0px 10px;
     padding: 0.5rem 0.5rem;
     margin-left: 1rem;
+    top: -1rem;
 }
 
 .menu_button_inside, .menu_button_outside{
@@ -54,13 +57,7 @@ html, body {
     margin-left: 2.5rem;
     background-color:beige;
 }
-.menu_button_inside:hover,.menu_button_outside:hover,.page_header_obj:hover  {
-    transform: scale(1.1);
-    transition: transform 0.15s ease-in-out;
-    cursor:pointer;
-}
 
-/* HTML menu object css style */
 .page_header_obj{
     display: block;
     width: max-content;
@@ -79,6 +76,14 @@ html, body {
     border-color: Black;
 }
 
+/* Hover detection and handler */
+.menu_button_inside:hover,.menu_button_outside:hover,.page_header_obj:hover  {
+    transform: scale(1.1);
+    transition: transform 0.15s ease-in-out;
+    cursor:pointer;
+}
+
+/* Animation key frames*/
 @keyframes fadeIn {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -88,7 +93,3 @@ html, body {
     from { opacity: 1; }
     to   { opacity: 0; }
 }
-
-
-
-
