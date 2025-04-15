@@ -13,7 +13,7 @@ button_menu_toggle_outside.addEventListener("click", function() {
             button_menu_toggle_outside.style.display = "none";
             menu.style.opacity = "0";
             menu.style.display = "flex";
-            menu.style.animation = "fadeIn .125s ease-in-out both";     
+            menu.style.animation = "fadeIn .125s ease-in-out both";  
         }, 125);
     }
 } );
