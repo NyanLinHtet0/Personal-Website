@@ -1,0 +1,35 @@
+
+.page_title{
+    margin: 1rem 2rem;
+    font-size: 2.25rem;
+}
+
+.horizontal_line{
+    display: inline-block;
+    position: absolute;
+    height: 0.25rem;
+    width: 20vw;
+    background-color: black;
+}
+
+.picture_box{
+    position: absolute;
+    display:inline-block;
+    width: 20vw;
+    height: 40vh;
+    border-style: solid;
+    border-color: black;
+    top: 30vh;
+    left: 40vw;
+}
+
+#horizontal_line_id_1{
+    left: 10vw;
+    top: 60vh;
+    width: 30vw;
+}
+
+#horizontal_line_id_2{
+    left: 60.1vw;
+    top: 40vh;
+}

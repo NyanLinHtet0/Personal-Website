@@ -31,3 +31,7 @@ button_menu_toggle_inside.addEventListener("click", function() {
     }
 } );
 
+
+const referenceHeight = document.getElementById('body_content_id').offsetHeight;
+document.getElementById('menu_button_outside_id').style.marginBottom = `${referenceHeight}px`;
+
