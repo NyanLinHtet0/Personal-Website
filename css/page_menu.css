@@ -15,7 +15,7 @@ html, body {
     margin: 0.8rem;
 }
 
-/* Menu objects styling */
+/* Menu objects styling */  
 .page_menu{
     z-index: 1;
     display: none;
