@@ -10,7 +10,7 @@ function waitForAnimation(element) {
       element.addEventListener(
         'animationend',
         () => resolve(),
-        { once: true }      // automatically remove listener after it fires
+        { once: true }
       );
     });
 }
@@ -22,38 +22,31 @@ async function menu_fade_out() {
     menu.style.display = "none";
     button_menu_toggle_outside.style.display = "flex";
     button_menu_toggle_outside.style.animation = "fadeIn .125s ease-in-out both";
+    await waitForAnimation(button_menu_toggle_outside);
 }
 
-button_menu_toggle_outside.addEventListener("click", function() {
-    console.log("button clicked")
+async function menu_fade_in() {
     const menu = document.getElementById("page_menu_id");
-    if (menu){
-        button_menu_toggle_outside.style.animation = "fadeOut .125s ease-in-out forwards";
-        setTimeout(() => {
-            button_menu_toggle_outside.style.display = "none";
-            menu.style.opacity = "0";
-            menu.style.display = "flex";
-            menu.style.animation = "fadeIn .125s ease-in-out both";  
-        }, 125);
-    }
+    button_menu_toggle_outside.style.animation = "fadeOut .125s ease-in-out forwards";
+    await waitForAnimation(button_menu_toggle_outside);
+    button_menu_toggle_outside.style.display = "none";
+    menu.style.opacity = "0";
+    menu.style.display = "flex";
+    menu.style.animation = "fadeIn .125s ease-in-out both"; 
+    await waitForAnimation(menu);
+}
+
+// Pop menu into the viewport when menu button clicked
+button_menu_toggle_outside.addEventListener("click", function() {
+    console.log("menu button clicked")
+    menu_fade_in();
 } );
 
+// Hide menu outside of viewport when menu button clicked
 button_menu_toggle_inside.addEventListener("click", function() {
-    console.log("button clicked");
+    console.log("menu button clicked");
     menu_fade_out();
-    // if (menu){
-    //     menu.style.animation = "fadeOut .125s ease-in-out forwards";
-    //     setTimeout(() => {
-    //         menu.style.display = "none";
-    //         button_menu_toggle_outside.style.display = "flex";
-    //         button_menu_toggle_outside.style.animation = "fadeIn .125s ease-in-out both";
-    //     }, 125);
-    // }
 } );
-
-
-  
-
 
 const referenceHeight = document.getElementById('body_content_id').offsetHeight;
 document.getElementById('menu_button_outside_id').style.marginBottom = `${referenceHeight}px`;
