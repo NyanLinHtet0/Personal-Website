@@ -20,9 +20,6 @@
         <a href="/html/contacts" class = "page_header_obj">Contact Page</a>
     </div>
     <!-- Actual content of the page -->
-
-
-    
     <div class = "body_content" id = "body_content_id">
         <div class="page_title"> Welcome to Nyan's Domain</div>
         
@@ -30,14 +27,14 @@
 
         <div class="quote_content" id="quote_content_id">
             <q>Half human, half compiler — fully caffeinated.</q>
-            <div class="horizontal_line_1" id = "horizontal_line_id_1"></div>
+            <div class="horizontal_line" id = "horizontal_line_id_2"></div>
         </div>
         
         <div class="breif_intro" id="breif_intro_id">
-            <div class="name_label" id="name_label_id">
+            <div class="breif_intro" id="name_label_id">
                 Nyan Lin Htet
             </div>
-            <div class="horizontal_line_2" id = "horizontal_line_id_2"></div>
+            <div class="horizontal_line" id = "horizontal_line_id_1"></div>
             Originally from the coastal town of Myeik, Myanmar, I moved to Yangon to 
             pursue English studies and the American curriculum at Yangon Academy. That 
             journey ultimately led me to computer science, driven by a long-standing 

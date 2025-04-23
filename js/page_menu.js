@@ -4,6 +4,26 @@ const button_menu_toggle_outside = document.getElementById("menu_button_outside_
 const button_menu_toggle_inside = document.getElementById("menu_button_inside_id")
 
 
+
+function waitForAnimation(element) {
+    return new Promise(resolve => {
+      element.addEventListener(
+        'animationend',
+        () => resolve(),
+        { once: true }      // automatically remove listener after it fires
+      );
+    });
+}
+
+async function menu_fade_out() {
+    const menu = document.getElementById("page_menu_id");
+    menu.style.animation = "fadeOut .125s ease-in-out forwards";
+    await waitForAnimation(menu);
+    menu.style.display = "none";
+    button_menu_toggle_outside.style.display = "flex";
+    button_menu_toggle_outside.style.animation = "fadeIn .125s ease-in-out both";
+}
+
 button_menu_toggle_outside.addEventListener("click", function() {
     console.log("button clicked")
     const menu = document.getElementById("page_menu_id");
@@ -20,18 +40,22 @@ button_menu_toggle_outside.addEventListener("click", function() {
 
 button_menu_toggle_inside.addEventListener("click", function() {
     console.log("button clicked");
-    const menu = document.getElementById("page_menu_id");
-    if (menu){
-        menu.style.animation = "fadeOut .125s ease-in-out forwards";
-        setTimeout(() => {
-            menu.style.display = "none";
-            button_menu_toggle_outside.style.display = "flex";
-            button_menu_toggle_outside.style.animation = "fadeIn .125s ease-in-out both";
-        }, 125);
-    }
+    menu_fade_out();
+    // if (menu){
+    //     menu.style.animation = "fadeOut .125s ease-in-out forwards";
+    //     setTimeout(() => {
+    //         menu.style.display = "none";
+    //         button_menu_toggle_outside.style.display = "flex";
+    //         button_menu_toggle_outside.style.animation = "fadeIn .125s ease-in-out both";
+    //     }, 125);
+    // }
 } );
+
+
+  
 
 
 const referenceHeight = document.getElementById('body_content_id').offsetHeight;
 document.getElementById('menu_button_outside_id').style.marginBottom = `${referenceHeight}px`;
+
 
