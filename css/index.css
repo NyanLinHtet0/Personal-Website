@@ -4,6 +4,12 @@
     font-size: 2.25rem;
 }
 
+.body_content{
+    position: absolute;
+    display: flex;
+    margin: 0.8rem;
+}
+
 .horizontal_line_1{
     display: inline-block;
     height: 0.25rem;

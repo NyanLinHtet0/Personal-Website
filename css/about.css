@@ -1,0 +1,46 @@
+.body_content{
+    position: absolute;
+    display: flex;
+    margin: 0.8rem;
+    width: 93vw;
+}
+
+.left_content{
+    display:flex;
+    width: 45vw;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.right_content{
+    display:flex;
+    width: 45vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-direction: column;
+}
+
+.sub_title_first{ /* adjust margin top for first element*/
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-left:.25rem;
+    margin-top: .25rem;
+}
+.sub_title{
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    margin-left:.25rem;
+}
+
+.sub_title_content{
+    margin-top:.25rem;
+    margin-left:.25rem;
+}
+
+.skills_list{
+    margin-left: 1rem;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+}

@@ -8,13 +8,6 @@ html, body {
     padding: 0;
 }
 
-/* Page Content Styling */
-.body_content{
-    position: relative;
-    display: flex;
-    margin: 0.8rem;
-}
-
 /* Menu objects styling */  
 .page_menu{
     z-index: 1;
