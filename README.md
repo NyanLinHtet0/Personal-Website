@@ -2,7 +2,7 @@ Dependencies: nodejs
 
 How to run:
 1. Clone the Repo
-2. run "npm init"
+2. run "npm init -y"
 3. run "npm install express"
 4. run "node server.js"
 5. open "localhost:3000" on your browser
