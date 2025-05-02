@@ -3,22 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Skills</title>
     <link rel="stylesheet" href="../css/page_menu.css">
+    <link rel="stylesheet" href="../css/skills.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .body_content {
+            padding: 20px;
+        }
+        .skill-category {
+            margin-bottom: 30px;
+        }
+        .skill-category h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .skills-list li {
+            list-style: none;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .progress-bar {
+            background-color: #ddd;
+            height: 8px;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+        .progress-fill {
+            height: 100%;
+            background-color: #4caf50;
+        }
+        .learning-section {
+            background: #fff;
+            padding: 15px;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div class="menu_button_outside" id = "menu_button_outside_id"> ≡ </div>
-    <div class = "page_menu" id = "page_menu_id" >
-        <div class="menu_button_inside" id = "menu_button_inside_id"> ≡ </div>
-        <a href="/" class = "page_header_obj">Home Page</a>
-        <a href="/html/about" class = "page_header_obj">About Page</a>
-        <a href="/html/projects" class = "page_header_obj">Projects Page</a>
-        <a href="/html/skills" class = "page_header_obj">Skills Page</a>
-        <a href="/html/contacts" class = "page_header_obj">Contact Page</a>
-    </div>
-Skills Page
+<div class="menu_button_outside" id="menu_button_outside_id"> ≡ </div>
+<div class="page_menu" id="page_menu_id">
+    <div class="menu_button_inside" id="menu_button_inside_id"> ≡ </div>
+    <a href="/" class="page_header_obj">Home Page</a>
+    <a href="/html/about" class="page_header_obj">About Page</a>
+    <a href="/html/projects" class="page_header_obj">Projects Page</a>
+    <a href="/html/skills" class="page_header_obj">Skills Page</a>
+    <a href="/html/contacts" class="page_header_obj">Contact Page</a>
+</div>
 
-    
-    <script src="../js/page_menu.js"></script>
+<div class="body_content">
+    <h1>My Technical Skills</h1>
+
+    <div class="skill-category">
+        <h3>Languages & Tools</h3>
+        <ul class="skills-list">
+            <li>Python<div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div></li>
+            <li>JavaScript<div class="progress-bar"><div class="progress-fill" style="width: 60%;"></div></div></li>
+            <li>C++<div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div></li>
+            <li>SQL<div class="progress-bar"><div class="progress-fill" style="width: 70%;"></div></div></li>
+        </ul>
+    </div>
+
+    <div class="skill-category">
+        <h3>Web & Software Development</h3>
+        <ul class="skills-list">
+            <li>HTML/CSS + Responsive Design<div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div></li>
+            <li>Express.js<div class="progress-bar"><div class="progress-fill" style="width: 50%;"></div></div></li>
+            <li>Version Control (Git/GitHub)<div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div></li>
+        </ul>
+    </div>
+
+    <div class="skill-category">
+        <h3>AI, ML, and Data</h3>
+        <ul class="skills-list">
+            <li>OpenCV for Computer Vision<div class="progress-bar"><div class="progress-fill" style="width: 35%;"></div></div></li>
+            <li>OCR with Tesseract & Python<div class="progress-bar"><div class="progress-fill" style="width: 50%;"></div></div></li>
+        </ul>
+    </div>
+
+    <div class="learning-section">
+        <h3>Currently Learning</h3>
+        <ul>
+            <li>React library</li>
+            <li>Full-stack Deployment: Learning how to connect front-end websites with Express.js back-end servers and link them to databases</li>
+            <li>React library</li>
+            <li>Exploring OCR Technology</li>
+        </ul>
+
+        <h3>On My Radar</h3>
+        <ul>
+            <li>Burmese OCR Exploration</li>
+            <li>GPU programming with CUDA</li>
+            <li>IOS and MacOS app development</li>
+        </ul>
+    </div>
+</div>
+<script src="../js/page_menu.js"></script>
 </body>
 </html>

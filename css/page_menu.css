@@ -31,6 +31,7 @@ html, body {
 }
 
 .menu_button_inside, .menu_button_outside{
+    font-family: sans-serif; 
     display: flex;
     line-height: 2.5rem;    
     font-size: 3rem;
@@ -96,3 +97,17 @@ html, body {
     animation: fadeOut .125s ease-in-out forwards;
 }
 
+
+@media (max-width: 800px) {
+    .page_menu{
+        width: 100vw;
+        height: 100vh;   
+    }
+    .menu_button_inside {
+        margin-left: auto;
+        margin-right: 2rem;
+        margin-top: 2rem;
+    }
+    .menu_button_outside {
+    }
+}

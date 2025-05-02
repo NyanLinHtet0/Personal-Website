@@ -19,10 +19,15 @@
     </div>
 
     <div class="body_content">
-        <main class="projects-grid">    
-        <div class="project-card">
-            <img src="project1-thumbnail.jpg" alt="Project 1 Thumbnail">
-            <h2>Project One</h2>
+        <main class="projects-grid">
+        <div class="scroll-arrow_left" id="scrollArrow_left">❮</div>
+        <div class="scroll-arrow_right" id="scrollArrow_right">❯</div>
+        <div class="project-card project-detail">
+            <h2>Receipt Manager (2023)
+            </h2>
+            <img src="/assets/project1_thumbnail.jpg" alt="Project 1 Thumbnail">
+            <figcaption style="font-size: 0.8rem;">Receipt Manager UI main function</figcaption>
+            <h3>Objective:</h3>
             <p>
                 The program is a python-based application designed to help users manage and organize their spendings with other 
                 people digitally. As traditional paper-based receipt management systems are inefficient and time consuming, 
@@ -37,38 +42,86 @@
                 in all, the program allows the user to save and organize receipts with dates efficiently and access the receipts 
                 through a terminal based User-Friendly Interface.
             </p>
-            <p><strong>Tech Used:</strong> React, Node.js</p>
-            <a href="project1.html" class="button">View Details ↓</a>
+            <!-- <p><strong>Tech Used:</strong> React, Node.js</p> -->
+            <div class="button" id="button1">View Details ↓</div>
+            <div class="hidden more_detail_box" id="project-indepth-detail_1">
+                <div class="topic">Technologies Used</div>
+                <div class="topic-explanation">Python, JSON, Terminal UI, file-based data storage</div>
+            
+                <div class="topic">Challenges Faced</div>
+                <div class="topic-explanation">
+                    Designing a clean terminal-based interface, organizing receipt data for fast retrieval,
+                    handling shared expenses, and maintaining structure as the dataset grows. Some of the noticeable 
+                    difficulties:
+                    <li>
+                        The ability maintain and improve the code as the dataset and codebase grows. It 
+                        becomes substantially harder to improve as one feature implementation can require the whole
+                    </li> 
+                    <li>
+                        Testing and debugging takes longer as the terminal-based UI can only do so much
+                    </li> 
+                    <li>
+                        The UI seemed boring and have not aquired knowledge for web based applications
+                    </li> 
+                </div>
+            
+                <div class="topic">Outcomes</div>
+                <div class="topic-explanation">
+                    Created a usable, modular tool to manage receipts with minimal dependencies, ideal for groups sharing expenses.
+                </div>
+
+                <div class="topic">GitHub Repository</div>
+                <div class="topic-explanation">
+                <a href="https://github.com/NyanLinHtet0/Receipt-Manager" target="_blank" class="github-link">
+                    View on GitHub
+                </a>
+                </div>
+            </div>
+            
         </div>
         
-        <div class="project-card">
-            <img src="project2-thumbnail.jpg" alt="Project 2 Thumbnail">
+        <div class="project-card project-detail">
             <h2>Project Two</h2>
-            <p>Short description of the project goes here. Quick summary of what it is about.</p>
+            <img src="/assets/" alt="Project 1 Thumbnail">
+            <p>Short description of the project goes here. Quick summary of what it is about.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non tenetur totam quae accusamus velit quod.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non tenetur totam quae accusamus velit quod.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non tenetur totam quae accusamus velit quod.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non tenetur totam quae accusamus velit quod.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non tenetur totam quae accusamus velit quod.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non tenetur totam quae accusamus velit quod.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non tenetur totam quae accusamus velit quod.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non tenetur totam quae accusamus velit quod.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non tenetur totam quae accusamus velit quod.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non tenetur totam quae accusamus velit quod.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non tenetur totam quae accusamus velit quod.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non tenetur totam quae accusamus velit quod.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non tenetur totam quae accusamus velit quod.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non tenetur totam quae accusamus velit quod.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non tenetur totam quae accusamus velit quod.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non tenetur totam quae accusamus velit quod.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non tenetur totam quae accusamus velit quod.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non tenetur totam quae accusamus velit quod.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non tenetur totam quae accusamus velit quod.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non tenetur totam quae accusamus velit quod.
+            </p>
             <p><strong>Tech Used:</strong> Python, Django</p>
-            <a href="project2.html" class="button">View Details ➔</a>
+            <div class="button" id="button1">View Details ↓</div>
         </div> 
-        <div class="project-card">
+        <div class="project-card project-detail">
             <img src="project3-thumbnail.jpg" alt="Project 1 Thumbnail">
-            <h2>Project One</h2>
+            <h2>Project Three</h2>
             <p>Short description of the project goes here. Quick summary of what it is about.</p>
             <p><strong>Tech Used:</strong> React, Node.js</p>
-            <a href="project3.html" class="button">View Details ➔</a>
+            <div class="button" id="button1">View Details ↓</div>
         </div>   
-        <div class="project-card">
+        <div class="project-card project-detail">
             <img src="project3-thumbnail.jpg" alt="Project 1 Thumbnail">
-            <h2>Project One</h2>
+            <h2>Project Four</h2>
             <p>Short description of the project goes here. Quick summary of what it is about.</p>
             <p><strong>Tech Used:</strong> React, Node.js</p>
-            <a href="project3.html" class="button">View Details ➔</a>
-        </div> 
-        <div class="project-card">
-            <img src="project3-thumbnail.jpg" alt="Project 1 Thumbnail">
-            <h2>Project One</h2>
-            <p>Short description of the project goes here. Quick summary of what it is about.</p>
-            <p><strong>Tech Used:</strong> React, Node.js</p>
-            <a href="project3.html" class="button">View Details ➔</a>
-        </div>     
+            <div class="button" id="button1">View Details ↓</div>
+        </div>   
         </main> <!--end of Projects grid-->
     </div>
 
@@ -77,5 +130,6 @@
 
     
     <script src="../js/page_menu.js"></script>
+    <script src="../js/projects.js"></script>
 </body>
 </html>

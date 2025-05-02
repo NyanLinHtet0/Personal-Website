@@ -6,7 +6,7 @@ const port = 3000
 app.use('/HTML', express.static(path.join(__dirname, 'html')));
 app.use('/CSS', express.static(path.join(__dirname, 'css')));
 app.use('/js', express.static(path.join(__dirname, 'js')));
-app.use('/pictures', express.static(path.join(__dirname, 'pictures')));
+app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'html/index.html'))

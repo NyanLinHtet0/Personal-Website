@@ -1,5 +1,3 @@
-console.log("Hello World")
-
 const button_menu_toggle_outside = document.getElementById("menu_button_outside_id")
 const button_menu_toggle_inside = document.getElementById("menu_button_inside_id")
 
@@ -48,7 +46,7 @@ button_menu_toggle_inside.addEventListener("click", function() {
     menu_fade_out();
 } );
 
-const referenceHeight = document.getElementById('body_content_id').offsetHeight;
-document.getElementById('menu_button_outside_id').style.marginBottom = `${referenceHeight}px`;
+// const referenceHeight = document.getElementById('body_content_id').offsetHeight;
+// document.getElementById('menu_button_outside_id').style.marginBottom = `${referenceHeight}px`;
 
 

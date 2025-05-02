@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: rgba(124, 138, 137, 0.8)
+    background-color: rgb(100, 110, 125)
 }
 
 .body_content{
@@ -25,6 +25,24 @@ html, body {
     height: 2vh;
 }
 
+.page_menu{
+    background-color: rgb(200,200,200);
+    opacity: 1;
+}
+
+.page_header_obj{
+    display: block;
+    width: max-content;
+    font-size: 1.5rem;
+    padding: .5rem .5rem;
+    background-color: #ffa8e8;
+    border-radius: 10px 10px 10px 10px;
+    margin: 0.5rem;
+    position: relative;
+    top: 20%;  
+}
+
+
 
 .projects-grid {
     display: flex;  
@@ -41,24 +59,29 @@ html, body {
 }
 
 .project-card {
-    background: rgba(230, 230, 230, .8);
+    background: rgba(230, 230, 230, 1);
     border-radius: 10px;
-    overflow: auto;
+    overflow-y: auto;
     text-align: center;
     width: 60vw;
     flex-shrink: 0;
     scroll-snap-align: center;
     margin: 1vh 0 1vh 0;
     padding-top: 10vh;
+    overflow-y:auto;
+    scroll-snap-type: y mandatory; /* <--- Snap vertically */
+    scroll-behavior: smooth; /* <--- Smooth scrolling feel */
 }
 
 .project-card img {
-    width: 90%;
-    height: 50%;
-    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
 
 .button {
+    position:relative;
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
@@ -69,9 +92,14 @@ html, body {
 }
 
 .project-detail {
-    padding: 20px;
-    width: 30vw;
-    margin: 0 auto;
+    padding: 2rem;
+    width: 60vw;
+    margin: 1vh 0;
+
+    font-family: "Segoe UI", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: #222;
 }
 
 .project-detail img {
@@ -82,3 +110,137 @@ html, body {
 .projects-grid::-webkit-scrollbar {
     display: none; /* Chrome, Safari, and Opera */
 }
+
+.project-card::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+}
+
+.hidden{
+    display: none;
+}
+
+.scroll-arrow_right {
+    position: fixed;
+    font-weight: bold;
+    top: 50%;
+    right: 10vw;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    color: rgba(0, 0, 0, .6);
+    cursor: pointer;
+    z-index: 50;
+    transition: opacity 0.3s ease;
+    opacity: 0; /* hidden by default */
+    pointer-events: none; /* avoid clicking when hidden */
+}
+
+.scroll-arrow_right.visible {
+    opacity: .6;
+    pointer-events: all;
+}
+
+.scroll-arrow_right:hover {
+    transform: translateY(-50%) scale(1.4);
+    color: #000;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-arrow_left {
+    position: fixed;
+    font-weight: bold;
+    top: 50%;
+    left: 10vw;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    color: rgba(0, 0, 0, .3);
+    cursor: pointer;
+    z-index: 20;
+    transition: opacity 0.3s ease;
+    opacity: 0; /* hidden by default */
+    pointer-events: none; /* avoid clicking when hidden */
+}
+
+.scroll-arrow_left.visible {
+    opacity: .6;
+    pointer-events: all;
+}
+
+.scroll-arrow_left:hover {
+    transform: translateY(-50%) scale(1.4);
+    color: #000;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.more_detail_box {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.topic {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    color: #222;
+  }
+  
+  .topic-explanation {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+  }
+
+
+.github-link {
+    color: #0000EE;    
+    text-decoration: underline;
+    font-weight: normal;   
+    background: none;      
+    padding: 0;             
+    border: none;        
+  }
+  
+.github-link:hover {
+    color: #551A8B;             
+    text-decoration: underline;
+  }
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: .6; }
+}
+
+@keyframes fadeOut {
+    from { opacity: .6; }
+    to   { opacity: 0; }
+}
+
+.animate_fade_in{
+    animation: fadeIn .125s ease-in-out both;
+}
+
+.animate_fade_out{
+    animation: fadeOut .125s ease-in-out forwards;
+}
+
+
+
+@media (max-width: 800px) {
+    
+    .project-detail {
+        padding: 2rem;
+        width: 80vw;
+        margin: 1vh 0;
+
+        font-family: "Segoe UI", sans-serif;
+        font-size: 1rem;
+        line-height: 1.4;
+        color: #222;
+    }
+
+    .scroll-arrow_left {
+        left: 1vw;
+    }
+    .scroll-arrow_right {
+        right: 1vw;
+    }
+}
+
